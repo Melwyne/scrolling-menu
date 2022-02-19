@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    height: 100vh;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: rgb(26, 99, 102);
+    font-weight: bold;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+}
+/*---CSS nécessaire pour menu déroulant----*/
+.article{
+    position: relative;
+}
+.menuDeroulant{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(117, 153, 201);
+    display: none;
+}
+.menuDeroulant > li{
+    padding: 5px;
+    text-align: center;
+}
+.menuDeroulantCache{
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 15%;
+    left: 69.5%;
+    width: 80px;
+}
